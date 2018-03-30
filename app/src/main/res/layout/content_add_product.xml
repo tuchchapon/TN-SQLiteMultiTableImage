@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      tools:context="com.example.user.tn_sqlitemultitableimage.AddProductActivity"
+      tools:showIn="@layout/activity_add_product">
+
+      <GridLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+            <ImageView android:id="@+id/image_view"
+                       android:layout_width="400dp"
+                       android:layout_height="200dp"
+                       android:scaleType="centerCrop"
+                       android:visibility="gone" />
+
+            <Button android:id="@+id/button_image" android:text="เลือกภาพ" />
+
+            <TextView android:text="ชื่อสินค้า" style="@style/TextStyle"/>
+            <EditText android:id="@+id/edit_name"  style="@style/EditStyle" />
+
+            <TextView android:text="ราคา" style="@style/TextStyle"/>
+            <EditText android:id="@+id/edit_price"  style="@style/EditStyle" android:inputType="number" />
+
+            <TextView android:text="ลักษณะสินค้า (แยกเป็นข้อๆ)" style="@style/TextStyle" />
+            <EditText android:id="@+id/edit_char1"  style="@style/EditStyle" />
+            <EditText android:id="@+id/edit_char2"  style="@style/EditStyle" />
+            <EditText android:id="@+id/edit_char3"  style="@style/EditStyle" />
+            <EditText android:id="@+id/edit_char4"  style="@style/EditStyle" />
+            <EditText android:id="@+id/edit_char5"  style="@style/EditStyle" />
+
+            <Button android:id="@+id/button_save" android:text="บันทึกข้อมูล" />
+      </GridLayout>
+</android.support.v4.widget.NestedScrollView>
+
